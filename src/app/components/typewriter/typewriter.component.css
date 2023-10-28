@@ -1,0 +1,15 @@
+.typewriter {
+    min-height: 36vh;
+    width: 68vw;
+}
+
+.typewriter-text {
+    font-size: 1.5em !important;
+    color: #be6adf !important;
+    font-weight: 600 !important;
+}
+
+.Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: #b562d6 !important;
+}
