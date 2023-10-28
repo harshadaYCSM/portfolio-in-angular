@@ -46,6 +46,7 @@
     flex-wrap: wrap;
     max-width: 70%;
     justify-content: flex-end;
+    font-size: 1.2em;
 }
 
 .skill-title {
