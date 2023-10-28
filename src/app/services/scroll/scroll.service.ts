@@ -10,6 +10,7 @@ export class ScrollService {
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
+      console.log(`Scrolling to element with id: ${elementId}`);
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }

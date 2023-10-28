@@ -1,8 +1,19 @@
-<!-- src/app/navbar/navbar.component.html -->
-
-<nav>
-  <a (click)="scrollToSection('about')">About</a>
-  <a (click)="scrollToSection('skills')">Skills</a>
-  <a (click)="scrollToSection('projects')">Projects</a>
-  <a (click)="scrollToSection('contact')">Contact</a>
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a (click)="scrollToSection('intro')">Hsc.</a>
+  </div>
+  <ul class='navbar-list'>
+    <li>
+      <a (click)="scrollToSection('about')">About</a>
+    </li>
+    <li>
+      <a (click)="scrollToSection('skills')">Skills</a>
+    </li>
+    <li>
+      <a (click)="scrollToSection('work')">Work</a>
+    </li>
+    <li>
+      <a (click)="scrollToSection('contact')">Contact</a>
+    </li>
+  </ul>
 </nav>

@@ -1,0 +1,12 @@
+<div class="skill-section" [id]="id">
+  <p class="skill-title">{{ skillType }}</p>
+  <div class="skill-list">
+    <div *ngFor="let skill of skillSet[skillType]">
+      <div class="skill-set">
+        <!-- You can use Font Awesome icons here, make sure to add the necessary Angular bindings -->
+        <i class="skill-icon" [ngClass]="getSkillIcon(skill)"></i>
+        <p class="skill-name">{{ skill }}</p>
+      </div>
+    </div>
+  </div>
+</div>

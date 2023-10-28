@@ -8,6 +8,13 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { ScrollService } from './services/scroll/scroll.service';
+import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { WorkComponent } from './components/work/work.component';
+import { ProjectItemComponent } from './components/project-item/project-item.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { TypewriterComponent } from './components/typewriter/typewriter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,12 +22,17 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    SkillItemComponent,
+    WorkComponent,
+    ProjectItemComponent,
+    IntroComponent,
+    TypewriterComponent
   ],
   imports: [
     BrowserModule,
   ],
-  providers: [],
+  providers: [ScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

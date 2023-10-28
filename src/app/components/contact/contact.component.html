@@ -1,1 +1,12 @@
-<p>contact works!</p>
+<div id="contact" class="contact-container">
+  <!-- ... -->
+  <div class="contact">
+    <h2>CONTACT</h2>
+    <form>
+      <input type="text" placeholder="Name" value={name} onChange={handleNameChange} required />
+      <input type="email" placeholder="Email" value={email} onChange={handleEmailChange} required />
+      <textarea placeholder="Message" value={message} onChange={handleMessageChange} required></textarea>
+      <button class="btn" type="button" onClick={handleSubmit}>Send</button>
+    </form>
+  </div>
+</div>

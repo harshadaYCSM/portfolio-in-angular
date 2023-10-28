@@ -1,0 +1,11 @@
+<div class="project">
+  <h3 class="project-title">
+    {{ project }} ({{ projectData.duration }})
+  </h3>
+  <div class="project-description">
+    <p>{{ projectData.description }}</p>
+  </div>
+  <div class="project-tags">
+    <label *ngFor="let tag of projectData.tags" class="tag">{{ tag }}</label>
+  </div>
+</div>

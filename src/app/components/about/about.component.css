@@ -1,0 +1,98 @@
+.about {
+    padding: 5%;
+    background-color: #24143e;
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/* Profile Image */
+/* .profile-image {
+  margin-bottom: 3vh;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* Social Links */
+.social-links {
+    margin-top: 3vh;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.5vw;
+    width: 4vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #000000;
+}
+
+
+@media (max-width: 767px) {
+    .about {
+        padding: 3%;
+        padding-top: 12%;
+    }
+}

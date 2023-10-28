@@ -1,0 +1,10 @@
+<div id="work" class="work">
+  <h2>WORK</h2>
+  <p class="date">01/2018 – 03/2023</p>
+  <p class="company">L&T Technology Services, Bangalore</p>
+  <p class="post">Senior Engineer</p>
+  <p>{{ summary }}</p>
+  <div class="project-list">
+    <app-project-item *ngFor="let project of projectNames" [project]="project"></app-project-item>
+  </div>
+</div>
