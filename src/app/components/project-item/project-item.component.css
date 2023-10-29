@@ -1,7 +1,5 @@
 .projects {
     padding: 5%;
-    ;
-    /* background-color: #f9f9f9; */
 }
 
 .project {
@@ -12,12 +10,10 @@
 .project-title {
     font-size: 18px;
     font-weight: bold;
-    /* color: #333; */
 }
 
 .project-description {
     font-size: 16px;
-    /* color: #666; */
 }
 
 @keyframes fadeInScale {
