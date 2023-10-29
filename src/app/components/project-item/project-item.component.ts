@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { projects } from '../../assets/info'; // Adjust the path as needed
+import { projects } from '../../../assets/info'; // Adjust the path as needed
 
 @Component({
   selector: 'app-project-item',

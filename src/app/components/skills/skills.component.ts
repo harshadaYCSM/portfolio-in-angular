@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { skillSet, skillTypes } from '../../assets/info';
+import { skillSet, skillTypes } from '../../../assets/info';
 
 @Component({
   selector: 'app-skills',

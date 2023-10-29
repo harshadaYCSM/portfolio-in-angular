@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { skillIconsList } from '../../assets/info';
+import { skillIconsList } from '../../../assets/info';
 
 @Component({
   selector: 'app-skill-item',

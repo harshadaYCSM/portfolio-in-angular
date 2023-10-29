@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { projectNames, summary } from '../../assets/info';
+import { projectNames, summary } from '../../../assets/info';
 
 @Component({
   selector: 'app-work',

@@ -95,17 +95,17 @@ export const typewriterTextStrings = [
 export const projects: { [key: string]: { duration: string; description: string; tags: string[] } } = {
     "Infinite SmartTV Project": {
         duration: "07/2022 - 03/2023",
-        description: "Web app development for 5 different OTT clients’ app on a single code base.",
-        tags: ["ReactJS", "HTML5", "CSS", "DashJS"]
+        description: "Development of a React App for 5 different brands on a single code base.",
+        tags: ["ReactJS", "HTML5", "CSS", "DashJS", "Leadership"]
     },
     "Zee5 Player & Web App": {
         duration: "03/2020 - 06/2022",
-        description: "Worked on development of a responsive & feature-rich web application for SmartTVs.",
-        tags: ["Vanilla Javascript", "HTML5", "CSS", "SASS", "Redux"]
+        description: "Worked on development of a responsive & feature-rich web application, based on component- based architecture with VanillaJS.",
+        tags: ["Vanilla Javascript", "HTML5", "CSS", "SASS", "Redux", "Analytics"]
     },
     "India Today": {
         duration: "02/2018 - 02/2020",
-        description: "Built responsive web applications for India Today & AajTak, news provider firms.",
+        description: " Built responsive web applications for India Today & AajTak, news provider firms.",
         tags: ["Vanilla Javascript", "React", "HTML", "CSS"]
     }
 };

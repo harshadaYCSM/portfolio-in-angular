@@ -21,6 +21,8 @@ import { faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd, 
 import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faReact, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 library.add(
@@ -47,7 +49,9 @@ library.add(
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ScrollService],
   bootstrap: [AppComponent]

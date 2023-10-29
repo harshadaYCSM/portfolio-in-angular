@@ -1,12 +1,15 @@
-<div id="contact" class="contact-container">
-  <!-- ... -->
-  <div class="contact">
-    <h2>CONTACT</h2>
-    <form>
-      <input type="text" placeholder="Name" value={name} onChange={handleNameChange} required />
-      <input type="email" placeholder="Email" value={email} onChange={handleEmailChange} required />
-      <textarea placeholder="Message" value={message} onChange={handleMessageChange} required></textarea>
-      <button class="btn" type="button" onClick={handleSubmit}>Send</button>
-    </form>
-  </div>
+<div class="contact">
+  <h2>CONTACT</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="handleSubmit()">
+    <input type="text" placeholder="Name" formControlName="name" />
+    <input type="email" placeholder="Email" formControlName="email" />
+    <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+      <p class="error-message">Email is required.</p>
+    </div>
+    <div *ngIf="contactForm.get('email')?.hasError('invalidEmail') && contactForm.get('email')?.touched">
+      <p class="error-message">Invalid email address.</p>
+    </div>
+    <textarea placeholder="Message" formControlName="message"></textarea>
+    <button class="btn" type="submit" [disabled]="contactForm.invalid">Send</button>
+  </form>
 </div>
