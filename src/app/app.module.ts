@@ -20,6 +20,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd, faToolbox, faTvAlt, faStore, faB, faDashboard } from '@fortawesome/free-solid-svg-icons';
 import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faReact, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 library.add(
@@ -41,7 +42,8 @@ library.add(
     WorkComponent,
     ProjectItemComponent,
     IntroComponent,
-    TypewriterComponent
+    TypewriterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
