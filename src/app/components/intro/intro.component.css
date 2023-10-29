@@ -22,7 +22,7 @@
         flex-direction: column-reverse;
         padding: 0;
         justify-content: space-around;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     .coder-image {

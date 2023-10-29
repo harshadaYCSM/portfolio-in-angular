@@ -3,7 +3,7 @@
   <div class="skill-list">
     <div *ngFor="let skill of skillSet[skillType]">
       <div class="skill-set">
-        <fa-icon [icon]="getSkillIcon(skill)"></fa-icon>
+        <fa-icon class="skill-icon" [icon]="getSkillIcon(skill)"></fa-icon>
         <p class="skill-name">{{ skill }}</p>
       </div>
     </div>

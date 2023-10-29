@@ -1,5 +1,5 @@
 .skill-icon {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin: 10%;
     transition: transform 0.3s ease;
 }
@@ -46,13 +46,12 @@
     flex-wrap: wrap;
     max-width: 70%;
     justify-content: flex-end;
-    font-size: 1.2em;
 }
 
 .skill-title {
     width: 18vw;
     max-height: 13vh;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 

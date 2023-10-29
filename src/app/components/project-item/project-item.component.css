@@ -8,12 +8,7 @@
 }
 
 .project-title {
-    font-size: 18px;
     font-weight: bold;
-}
-
-.project-description {
-    font-size: 16px;
 }
 
 @keyframes fadeInScale {
@@ -36,14 +31,6 @@
 
     .project {
         margin-bottom: 10px;
-    }
-
-    .project-title {
-        font-size: 16px;
-    }
-
-    .project-description {
-        font-size: 14px;
     }
 }
 

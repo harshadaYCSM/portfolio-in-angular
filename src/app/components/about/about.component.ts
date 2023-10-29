@@ -7,6 +7,7 @@ import { githubUrl, linkedinUrl } from '../../../assets/info';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent {
   faGitHub = faGithub;
   faLinkedIn = faLinkedin;

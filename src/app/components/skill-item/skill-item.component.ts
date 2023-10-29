@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { skillIconsList } from '../../../assets/info';
 
 @Component({
@@ -6,7 +6,7 @@ import { skillIconsList } from '../../../assets/info';
   templateUrl: './skill-item.component.html',
   styleUrls: ['./skill-item.component.css']
 })
-export class SkillItemComponent implements OnInit {
+export class SkillItemComponent {
   @Input() skillSet: any;
   @Input() skillType: string = '';
   @Input() id: number = 0;
@@ -16,8 +16,4 @@ export class SkillItemComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit(): void {
-    // Any initialization code you may want to add can go here.
-  }
 }
