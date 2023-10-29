@@ -9,7 +9,6 @@ declare module 'typewriter-effect' {
         autoStart: boolean;
         loop: boolean;
         deleteSpeed: number;
-        // Add other options as needed
     }
 
     export = Typewriter;

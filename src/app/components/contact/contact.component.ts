@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'] // Adjust the path as needed
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
   name: string = '';
