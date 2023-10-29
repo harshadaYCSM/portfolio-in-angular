@@ -23,6 +23,7 @@ import { faHtml5, faCss3Alt, faJs, faReact, faGithub, faLinkedin } from '@fortaw
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WorkItemComponent } from './components/work-item/work-item.component';
 
 
 library.add(
@@ -45,7 +46,8 @@ library.add(
     ProjectItemComponent,
     IntroComponent,
     TypewriterComponent,
-    FooterComponent
+    FooterComponent,
+    WorkItemComponent
   ],
   imports: [
     BrowserModule,

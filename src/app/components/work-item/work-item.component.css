@@ -1,0 +1,55 @@
+.projects {
+    padding: 5%;
+}
+
+.project {
+    margin-bottom: 20px;
+    animation: fadeInScale 1s ease-in-out;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 3%;
+        padding-top: 12%;
+    }
+
+    .project {
+        margin-bottom: 10px;
+    }
+}
+
+.project-tags {
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 4px 8px;
+    background-color: rgb(110, 110, 212);
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    animation: fadeInUp 0.6s ease forwards;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: rgb(80, 80, 156);
+}

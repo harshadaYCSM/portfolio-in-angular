@@ -1,6 +1,7 @@
 .typewriter {
     min-height: 36vh;
     width: 60vw;
+    margin: 4%;
 }
 
 .typewriter-text {
@@ -11,7 +12,7 @@
 
 @media (max-width: 767px) {
     .typewriter {
-        min-height: 25vh;
+        min-height: 27vh;
         width: 60vw;
         margin: 4%;
     }
