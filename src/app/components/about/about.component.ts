@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-
+  faGitHub = faGithub;
+  faLinkedIn = faLinkedin
 }

@@ -1,9 +1,9 @@
-// import {
-//     faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd,
-//     faToolbox, faTvAlt, faStore, faB, faDashboard
-// } from '@fortawesome/free-solid-svg-icons';
-// import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
-// import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import {
+    faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd,
+    faToolbox, faTvAlt, faStore, faB, faDashboard
+} from '@fortawesome/free-solid-svg-icons';
+import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 export const skillSet = {
     'Front-end Development': [
@@ -46,13 +46,38 @@ export const skillSet = {
 
 export const skillTypes = Object.keys(skillSet);
 
-// export const skillIconsList = {
-//     'HTML': faHtml5, 'CSS': faCss3Alt, 'Javascript': faJs, 'ES6': faJsSquare, 'ReactJS': faReact, 'Redux': faStore, 'REST APIs': faTerminal, 'SASS': faSass,
-//     'VS Code': faCode, 'Chrome Debugger': faToolbox, 'Jira': faJira, 'Git': faGit, 'Confluence': faConfluence, 'Zeplin': faPalette, 'Figma': faFigma,
-//     'Chrome': faChrome, 'LG WebOS': faTvAlt, 'TizenOS': faTvAlt, 'Sony SmartTV': faTvAlt, 'Vidaa': faTvAlt,
-//     'NPM': faNpm, 'Babel': faB, 'Webpack': faLaptopCode, 'Mixpanel': faDashboard, 'IMA': faAd, 'SSAI': faAd, 'DRM': faFileCode, 'Deep Linking': faCogs,
-//     'default': faJs
-// }
+export const skillIconsList: { [key: string]: any } = {
+    'HTML': faHtml5,
+    'CSS': faCss3Alt,
+    'Javascript': faJs,
+    'ES6': faJsSquare,
+    'ReactJS': faReact,
+    'Redux': faStore,
+    'REST APIs': faTerminal,
+    'SASS': faSass,
+    'VS Code': faCode,
+    'Chrome Debugger': faToolbox,
+    'Jira': faJira,
+    'Git': faGit,
+    'Confluence': faConfluence,
+    'Zeplin': faPalette,
+    'Figma': faFigma,
+    'Chrome': faChrome,
+    'LG WebOS': faTvAlt,
+    'TizenOS': faTvAlt,
+    'Sony SmartTV': faTvAlt,
+    'Vidaa': faTvAlt,
+    'NPM': faNpm,
+    'Babel': faB,
+    'Webpack': faLaptopCode,
+    'Mixpanel': faDashboard,
+    'IMA': faAd,
+    'SSAI': faAd,
+    'DRM': faFileCode,
+    'Deep Linking': faCogs,
+    'default': faJs,
+};
+
 
 export const githubUrl = 'https://github.com/harshadaYCSM';
 

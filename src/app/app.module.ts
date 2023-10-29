@@ -15,6 +15,20 @@ import { ProjectItemComponent } from './components/project-item/project-item.com
 import { IntroComponent } from './components/intro/intro.component';
 import { TypewriterComponent } from './components/typewriter/typewriter.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd, faToolbox, faTvAlt, faStore, faB, faDashboard } from '@fortawesome/free-solid-svg-icons';
+import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
+library.add(
+  faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd,
+  faToolbox, faTvAlt, faStore, faB, faDashboard,
+  faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare,
+  faHtml5, faCss3Alt, faJs, faReact, faGithub, faLinkedin
+);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +45,7 @@ import { TypewriterComponent } from './components/typewriter/typewriter.componen
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule
   ],
   providers: [ScrollService],
   bootstrap: [AppComponent]

@@ -4,7 +4,8 @@
     <div *ngFor="let skill of skillSet[skillType]">
       <div class="skill-set">
         <!-- You can use Font Awesome icons here, make sure to add the necessary Angular bindings -->
-        <i class="skill-icon" [ngClass]="getSkillIcon(skill)"></i>
+        <!-- <i class="skill-icon" [ngClass]="getSkillIcon(skill)"></i> -->
+        <fa-icon [icon]="getSkillIcon(skill)"></fa-icon>
         <p class="skill-name">{{ skill }}</p>
       </div>
     </div>

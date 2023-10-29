@@ -1,22 +1,23 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { skillIconsList } from '../../assets/info';
 
 @Component({
   selector: 'app-skill-item',
   templateUrl: './skill-item.component.html',
   styleUrls: ['./skill-item.component.css']
 })
-export class SkillItemComponent {
-
+export class SkillItemComponent implements OnInit {
   @Input() skillSet: any;
   @Input() skillType: string = '';
   @Input() id: number = 0;
 
-  getSkillIcon(skill: string): string {
-    // Define your logic to get the appropriate Font Awesome icon class here
-    // You can use a switch statement or object mapping similar to your 'skillIconsList'
-    // and return the corresponding icon class.
-    return 'fa-icon-class'; // Replace with the actual icon class
+  getSkillIcon(skill: string): any {
+    return skillIconsList[skill];
   }
 
   constructor() { }
+
+  ngOnInit(): void {
+    // Any initialization code you may want to add can go here.
+  }
 }
