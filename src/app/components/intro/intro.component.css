@@ -33,6 +33,7 @@
 
 .banner-image {
     padding-top: 11%;
+    align-self: center;
 }
 
 .coder-image {
@@ -41,8 +42,8 @@
 
 .introduction,
 .keywords {
-    margin: 0;
-    font-size: 1.2em;
+    margin: 4%;
+    font-size: 1.1em;
 }
 
 .wave {

@@ -13,6 +13,7 @@
     .typewriter {
         min-height: 25vh;
         width: 60vw;
+        margin: 4%;
     }
 
     .typewriter-text {
