@@ -44,8 +44,8 @@
     padding: 4px 8px;
     background-color: rgb(110, 110, 212);
     border-radius: 4px;
-    margin-right: 6px;
-    margin-bottom: 4px;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
     animation: fadeInUp 0.6s ease forwards;
     transition: background-color 0.3s ease;
 }

@@ -1,0 +1,28 @@
+.projects {
+    padding: 5%;
+    background-color: #171323;
+}
+
+h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+.carousel-container {
+    text-align: -webkit-center;
+    padding-top: 2%;
+}
+
+.carousel-caption {
+    position: relative;
+    bottom: -0.75rem;
+    padding-top: 1.25rem;
+    padding-bottom: 4.25rem;
+    color: #fff;
+    text-align: center;
+    left: 0%;
+}
+
+.carousel-image {
+    height: 32vh;
+}

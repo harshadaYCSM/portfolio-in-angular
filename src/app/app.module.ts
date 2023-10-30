@@ -24,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WorkItemComponent } from './components/work-item/work-item.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 library.add(
@@ -53,7 +54,8 @@ library.add(
     BrowserModule,
     FontAwesomeModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [ScrollService],
   bootstrap: [AppComponent]
