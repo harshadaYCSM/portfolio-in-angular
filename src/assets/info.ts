@@ -2,18 +2,20 @@ import {
     faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd,
     faToolbox, faTvAlt, faStore, faB, faDashboard
 } from '@fortawesome/free-solid-svg-icons';
-import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faAngular, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 export const skillSet = {
-    'Front-end Development': [
+    'Development Languages & Framework': [
         'HTML',
         'CSS',
         'Javascript',
         'ES6',
         'ReactJS',
         'Redux',
-        'SASS'
+        'SASS',
+        'Angular',
+        'Nodejs'
     ],
     'Development Tools & Environment': [
         'VS Code',
@@ -21,6 +23,7 @@ export const skillSet = {
         'NPM',
         'Babel',
         'Webpack',
+        'Docker',
         'Git',
         'Chrome'
     ],
@@ -55,6 +58,8 @@ export const skillIconsList: { [key: string]: any } = {
     'Redux': faStore,
     'REST APIs': faTerminal,
     'SASS': faSass,
+    'Angular': faAngular,
+    'Nodejs': faNodeJs,
     'VS Code': faCode,
     'Chrome Debugger': faToolbox,
     'Jira': faJira,
@@ -70,6 +75,7 @@ export const skillIconsList: { [key: string]: any } = {
     'NPM': faNpm,
     'Babel': faB,
     'Webpack': faLaptopCode,
+    'Docker': faDocker,
     'Mixpanel': faDashboard,
     'IMA': faAd,
     'SSAI': faAd,
