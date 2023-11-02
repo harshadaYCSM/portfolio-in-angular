@@ -9,8 +9,11 @@ import { githubUrl, linkedinUrl } from '../../../assets/info';
 })
 
 export class AboutComponent {
+  // Font Awesome icons for GitHub and LinkedIn
   faGitHub = faGithub;
   faLinkedIn = faLinkedin;
+
+  // URLs for GitHub and LinkedIn profiles
   githubUrl = githubUrl;
   linkedinUrl = linkedinUrl;
 }
