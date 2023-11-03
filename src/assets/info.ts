@@ -1,3 +1,4 @@
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import {
     faCode, faLaptopCode, faTerminal, faPalette, faCogs, faFileCode, faAd,
     faToolbox, faTvAlt, faStore, faB, faDashboard
@@ -5,7 +6,13 @@ import {
 import { faConfluence, faGit, faFigma, faNpm, faChrome, faJira, faSass, faJsSquare, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faReact, faAngular, faDocker } from '@fortawesome/free-brands-svg-icons';
 
-export const skillSet = {
+export const name: string = "Harshada Chaudhari";
+
+export const keywords: string[] = ['JavaScript', 'HTML', 'CSS', 'Angular', 'ReactJS', 'ES6'];
+
+export const summary: string = 'Worked on multiple projects, ensuring exceptional user experience & optimized performance. Contributed to feature additions, UI enhancements & bug fixing to meet the customer demands. Utilized Agile Software Development(Scrum) methodologies for all projects.';
+
+export const skillSet: { [key: string]: string[] } = {
     'Development Languages & Framework': [
         'HTML',
         'CSS',
@@ -15,7 +22,7 @@ export const skillSet = {
         'Redux',
         'SASS',
         'Angular',
-        'Nodejs'
+        'Nodejs',
     ],
     'Development Tools & Environment': [
         'VS Code',
@@ -25,31 +32,31 @@ export const skillSet = {
         'Webpack',
         'Docker',
         'Git',
-        'Chrome'
+        'Chrome',
     ],
     'Collaboration & Project Management': [
         'Jira',
         'Confluence',
         'Zeplin',
-        'Figma'
+        'Figma',
     ],
     'Smart TV Development': [
         'LG WebOS',
         'TizenOS',
         'Sony SmartTV',
-        'Vidaa'
+        'Vidaa',
     ],
     'Web Analytics & Others': [
         'Mixpanel',
         'IMA',
         'SSAI',
-        'DRM'
-    ]
-}
+        'DRM',
+    ],
+};
 
-export const skillTypes = Object.keys(skillSet);
+export const skillTypes: string[] = Object.keys(skillSet);
 
-export const skillIconsList: { [key: string]: any } = {
+export const skillIconsList: { [key: string]: IconDefinition } = {
     'HTML': faHtml5,
     'CSS': faCss3Alt,
     'Javascript': faJs,
@@ -84,39 +91,35 @@ export const skillIconsList: { [key: string]: any } = {
     'default': faJs,
 };
 
+export const githubUrl: string = 'https://github.com/harshadaYCSM';
 
-export const githubUrl = 'https://github.com/harshadaYCSM';
+export const linkedinUrl: string = 'https://www.linkedin.com/in/harshada-chaudhari-3a8220b1/';
 
-export const linkedinUrl = 'https://www.linkedin.com/in/harshada-chaudhari-3a8220b1/';
-
-export const typewriterTextStrings = [
+export const typewriterTextStrings: string[] = [
     "Software Developer",
     "Smart TV App Developer",
     "Frontend Developer",
     "ReactJS Enthusiast",
     "Aspiring Fullstack Developer",
     "A Job Seeker, currently",
-]
+];
 
 export const projects: { [key: string]: { duration: string; description: string; tags: string[] } } = {
     "Infinite SmartTV Project": {
         duration: "07/2022 - 03/2023",
         description: "Development of a React App for 5 different brands on a single code base.",
-        tags: ["ReactJS", "HTML5", "CSS", "DashJS", "Leadership"]
+        tags: ["ReactJS", "HTML5", "CSS", "DashJS", "Leadership"],
     },
     "Zee5 Player & Web App": {
         duration: "03/2020 - 06/2022",
-        description: "Worked on development of a responsive & feature-rich web application, based on component- based architecture with VanillaJS.",
-        tags: ["Vanilla Javascript", "HTML5", "CSS", "SASS", "Redux", "Analytics"]
+        description: "Worked on development of a responsive & feature-rich web application, based on component-based architecture with VanillaJS.",
+        tags: ["Vanilla Javascript", "HTML5", "CSS", "SASS", "Redux", "Analytics"],
     },
     "India Today": {
         duration: "02/2018 - 02/2020",
         description: " Built responsive web applications for India Today & AajTak, news provider firms.",
-        tags: ["Vanilla Javascript", "React", "HTML", "CSS"]
-    }
+        tags: ["Vanilla Javascript", "React", "HTML", "CSS"],
+    },
 };
 
-
-export const projectNames = Object.keys(projects);
-
-export const summary = 'Worked on multiple projects, ensuring exceptional user experience & optimized performance. Contributed to feature additions, UI enhancements & bug fixing to meet the customer demands. Utilized Agile Software Development(Scrum) methodologies for all projects.';
+export const projectNames: string[] = Object.keys(projects);

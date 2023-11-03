@@ -7,7 +7,7 @@ import { skillIconsList } from '../../../assets/info';
   styleUrls: ['./skill-item.component.css']
 })
 export class SkillItemComponent {
-  @Input() skillSet: any;
+  @Input() skillSet: { [key: string]: string[] } = {};
   @Input() skillType: string = '';
   @Input() id: number = 0;
 
@@ -15,5 +15,4 @@ export class SkillItemComponent {
     return skillIconsList[skill];
   }
 
-  constructor() { }
 }

@@ -6,7 +6,7 @@
     <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
       <p class="error-message">Email is required.</p>
     </div>
-    <div *ngIf="contactForm.get('email')?.hasError('invalidEmail') && contactForm.get('email')?.touched">
+    <div *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
       <p class="error-message">Invalid email address.</p>
     </div>
     <textarea placeholder="Message" formControlName="message"></textarea>

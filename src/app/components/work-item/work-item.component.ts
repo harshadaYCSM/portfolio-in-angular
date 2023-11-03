@@ -7,15 +7,17 @@ import { projects } from '../../../assets/info';
   styleUrls: ['./work-item.component.css']
 })
 export class WorkItemComponent {
-  @Input() project: string = '  ';
-  projectData: any; // Create a property to store the project data
+  @Input() project: string = '';
+  projectData: { duration: string; description: string; tags: string[] } = {
+    duration: '',
+    description: '',
+    tags: []
+  };
 
   constructor() { }
 
   ngOnInit() {
     // Initialize the projectData property with the data for the specified project
-    this.projectData = projects[this.project];
+    this.projectData = projects[this.project] || this.projectData;
   }
 }
-
-

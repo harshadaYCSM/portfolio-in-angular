@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  items = [
+  projectItems = [
     { title: 'Portfolio', imageUrl: 'assets/Picture1.png' },
     { title: 'User Management', imageUrl: 'assets/Picture2.png' },
     { title: 'Email Clone', imageUrl: 'assets/Picture3.png' },

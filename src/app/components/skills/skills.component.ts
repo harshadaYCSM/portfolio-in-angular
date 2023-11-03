@@ -7,9 +7,8 @@ import { skillSet, skillTypes } from '../../../assets/info';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-
-  skillSet = skillSet;
-  skillTypes = skillTypes;
+  skillSet: { [key: string]: string[] } = skillSet;
+  skillTypes: string[] = skillTypes;
 
   constructor() { }
 }

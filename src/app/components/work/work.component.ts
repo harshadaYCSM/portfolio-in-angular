@@ -4,11 +4,9 @@ import { projectNames, summary } from '../../../assets/info';
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css'] // Adjust the path as needed
+  styleUrls: ['./work.component.css']
 })
 export class WorkComponent {
-  projectNames = projectNames;
-  summary = summary;
-
-  constructor() { }
+  projectNames: string[] = projectNames;
+  summary: string = summary;
 }

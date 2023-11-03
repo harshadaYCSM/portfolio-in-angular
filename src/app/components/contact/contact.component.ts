@@ -23,15 +23,18 @@ export class ContactComponent {
   }
 
   handleSubmit() {
-    const emailSubject = encodeURIComponent('Contact Form Submission');
-    const emailBody = encodeURIComponent(`Name: ${this.name}%0D%0AEmail: ${this.email}%0D%0AMessage: ${this.message}`);
-    const mailtoLink = `mailto:charsh18@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+    if (this.contactForm.valid) {
+      console.log("Form Values: ", this.contactForm.value)
+      const { name, email, message } = this.contactForm.value;
+      const emailSubject = encodeURIComponent('Contact Form Submission');
+      const emailBody = encodeURIComponent(`Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`);
+      const mailtoLink = `mailto:charsh18@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
-    window.location.href = mailtoLink;
+      window.location.href = mailtoLink;
 
-    // Reset form fields
-    this.name = '';
-    this.email = '';
-    this.message = '';
+      // Reset form fields
+      this.contactForm.reset();
+    }
   }
+
 }

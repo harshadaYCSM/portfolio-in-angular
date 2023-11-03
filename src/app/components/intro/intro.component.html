@@ -1,16 +1,18 @@
 <div id='intro' class="intro">
     <div class="text-container">
-        <p class="introduction">Hi there, I am Harshada Chaudhari
+        <p class="introduction">Hi there, I am {{ name }}
             <span class="wave" role="img" aria-labelledby="wave">
                 👋🏻
             </span>
         </p>
 
         <app-typewriter></app-typewriter>
-
         <div class="keywords">
-            #JavaScript #HTML #CSS #Angular #ReactJS #ES6
+            <div *ngFor="let keyword of keywords" class="keyword">
+                #{{ keyword }}
+            </div>
         </div>
+
     </div>
 
     <div class="banner-image">

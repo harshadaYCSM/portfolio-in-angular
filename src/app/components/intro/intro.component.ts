@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { name, keywords } from 'src/assets/info';
 
 @Component({
   selector: 'app-intro',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent {
-  constructor() { }
+  name: string = name;
+  keywords: string[] = keywords;
 }
