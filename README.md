@@ -2,13 +2,13 @@
   Portfolio Website
 </h2>
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://your-portfolio-link.com">Live Demo</a>
 </p>
 
 <div align="center">
   <img alt="Demo" src="./src/assets/readmeImg.png" />
-</div>
+</div> -->
 
 <br/>
 

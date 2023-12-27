@@ -5,20 +5,20 @@
 }
 
 .typewriter-text {
-    font-size: 1.5em !important;
+    font-size: 4rem !important;
     color: #be6adf !important;
     font-weight: 600 !important;
 }
 
 @media (max-width: 767px) {
     .typewriter {
-        min-height: 27vh;
+        min-height: 10vh;
         width: 60vw;
         margin: 4%;
     }
 
     .typewriter-text {
-        font-size: 0.7em !important;
+        font-size: 2rem !important;
         color: #be6adf !important;
         font-weight: 600 !important;
     }
